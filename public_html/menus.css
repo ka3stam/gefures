@@ -1,0 +1,42 @@
+body { background-color: #8AB8E6;}
+
+p,h1{
+    font-family:fantasy;
+    color:#122a52;
+    text-align: center;
+}
+nav { 
+    width: 200px;
+    position: absolute;
+    top:5em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+li {
+    background-color: #C2EBFF;
+    border: 1px solid #8AB8E6;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family:fantasy;
+    cursor: pointer;
+    color: #000066;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{ color:#122a52;}
+

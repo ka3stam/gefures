@@ -1,0 +1,100 @@
+/* 
+    Created on : 19 Ιαν 2017, 10:59:21 μμ
+    Author     : stamatiki
+*/
+
+body {
+    background-color: #8AB8E6;
+}
+
+#myCanvas {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background-color: whitesmoke;
+    border:1px solid blue;	
+}
+
+/* The hidden leftsidenav menu */
+.leftsidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - changing in JavaScript file - function*/
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #000066; /* Blue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide */
+}
+
+/* The leftsidenav menu links */
+.leftsidenav a {
+    padding: 8px 30px 8px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #C2EBFF;
+    display: block;
+    transition: 0.3s;
+    font-family:fantasy;
+    font-weight:lighter;
+}
+
+/* sto mouse over sta links, allagi xrwmatos */
+.leftsidenav a:hover, .offcanvas a:focus{
+    color: #ffffff;
+    background-color: #000046;
+}
+
+/* Position and style the close button (epanw de3ia gwnia sto leftsidenav) */
+.leftsidenav .closelsn{
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 120px;  
+}
+
+/* Style page content */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* Se o8ones me upsos mikrotero apo 450px */
+@media screen and (max-height: 450px) {
+    .leftsidenav {padding-top: 15px;}
+    .leftsidenav a {font-size: 18px;}
+}
+
+.questmark {
+    text-align: right;
+    font-weight: 700;
+    font-size: 50px;
+}
+/* span (?) epanw de3ia sti gwnia to opoio emfanizei tis odigies*/
+#instructions{
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000066;
+    text-decoration: none;
+    cursor:help;
+}
+/* span epanw aristera sti gwnia to opoio emfanizei to leftsidenav*/
+#showmenu {
+    font-family:fantasy;
+    font-size:30px; 
+    cursor:pointer; 
+    color: #000066;
+}
+
+#showmenu:hover , #instructions:hover{
+    color:white;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ΓΕΦΥΡΕΣ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sweetalert.css">
+        <link rel="stylesheet" type="text/css" href="canvasgaming.css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body >
+        <div id="myNavmenu" class="leftsidenav">
+            <a href="javascript:void(0)" class="closelsn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" onclick="savemode()">αποθήκευση</a>
+            <a href="index.html">αρχικό μενού</a>
+        </div>
+        <span id="showmenu" onclick="openNav()">&#9776;</span>
+        <span id="instructions" onclick="openInstructions()">&quest;</span>
+        <div style="padding-top: 10px;"> 
+            <canvas id="myCanvas" width="500" height="300">Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>       
+
+        <script src="level2-b.js"></script>
+        <script src="leftsidenavmenu.js"></script>
+        <script src="instructions.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="sweetalert-dev.js"></script>
+    </body>
+</html>
